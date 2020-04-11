@@ -11,13 +11,13 @@
     <!--导航-->
     <nav class="ui inverted attached segment m-padded-tb-mini">
         <div class="ui container">
-            <div class="ui inverted secondary menu">
+            <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">Blog</h2>
-                <a href="#" class="item"><i class="home icon"></i>首页</a>
-                <a href="#" class="item"><i class="idea icon"></i>分类</a>
-                <a href="#" class="item"><i class="tags icon"></i>标签</a>
-                <a href="#" class="item"><i class="info icon"></i>关于我</a>
-                <div class="right item">
+                <a href="#" class="item m-mobile-hide"><i class="home icon"></i>Home</a>
+                <a href="#" class="item m-mobile-hide"><i class="idea icon"></i>Category</a>
+                <a href="#" class="item m-mobile-hide"><i class="tags icon"></i>Tags</a>
+                <a href="#" class="item m-mobile-hide"><i class="info icon"></i>About me</a>
+                <div class="right item m-mobile-hide">
                     <div class="ui icon inverted transparent input">
                         <input type="text" placeholder="search....">
                         <i class="search link icon"></i>
@@ -25,12 +25,16 @@
                 </div>
             </div>
         </div>
+        <a href="#" class="ui black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
     </nav>
 
     <!--  中间内容  -->
     <div class="m-container m-padded-tb-large">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
+                <!--左边博客列表-->
                 <div class="eleven wide column">
                     <!--      header              -->
                     <div class="ui top attached segment">
@@ -46,7 +50,7 @@
                     <!--content-->
                     <div class="ui attached segment">
                         <div class="ui padded vertical segment m-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
                                     <p class="m-text">正确做好任何一件事情的前提是清晰，正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已......</p>
@@ -79,7 +83,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
                                     <p class="m-text">正确做好任何一件事情的前提是清晰，正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已......</p>
@@ -112,7 +116,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
                                     <p class="m-text">正确做好任何一件事情的前提是清晰，正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已......</p>
@@ -145,7 +149,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
                                     <p class="m-text">正确做好任何一件事情的前提是清晰，正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已......</p>
@@ -178,7 +182,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
                                     <p class="m-text">正确做好任何一件事情的前提是清晰，正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已......</p>
@@ -211,7 +215,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
                                     <p class="m-text">正确做好任何一件事情的前提是清晰，正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已......</p>
@@ -243,6 +247,8 @@
                                 </div>
                             </div>
                         </div>
+
+
 
 
                     </div>
@@ -259,9 +265,125 @@
                         </div>
                     </div>
                 </div>
+                <!--右边的top-->
                 <div class="five wide column">
-                    <div class="ui segment">
 
+                    <!--分类-->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>Category
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    思考与感悟
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 标签   -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="tags icon"></i>Tag
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 最新推荐   -->
+
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment">
+                            <i class="bookmark icon"></i>最新推荐
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">用户故事 (User user)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">用户故事 (User user)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">用户故事 (User user)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">用户故事 (User user)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">用户故事 (User user)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">用户故事 (User user)</a>
+                        </div>
+                    </div>
+                    <!-- 二维码   -->
+                    <h4 class="ui horizontal divider header m-margin-top-large">扫码关注我</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="./static/images/wechat.jpg" alt="" class="ui rounded image" >
                     </div>
                 </div>
             </div>
@@ -269,19 +391,10 @@
     </div>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <!--  底部footer  -->
     <footer class="ui inverted vertical segment m-padded-tb-massive">
         <div class="ui  center aligned container">
-            <div class="ui inverted divided grid">
+            <div class="ui inverted divided stackable grid">
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
@@ -290,7 +403,7 @@
                     </div>
                 </div>
                 <div class="three wide column">
-                    <h4 class="ui inverted header m-text-spaced m-text-thin">最新博客</h4>
+                    <h4 class="ui inverted header m-text-spaced m-text-thin">Newest Blog</h4>
                     <div class="ui inverted link list">
                         <a href="#" class="item">用户故事 (User Story)</a>
                         <a href="#" class="item">用户故事 (User Story)</a>
